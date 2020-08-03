@@ -4,14 +4,15 @@
 
 <head>
   <title>Pizzeria</title>
-  <link rel="stylesheet" href="css/index.css">
-  <!--Load React Bootstrap-->
+  
+  <!--Load Bootstrap-->
   <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="css/index.css">
   
   <!--Load React-->
    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
@@ -32,12 +33,59 @@
 
     </div>
     
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">PIZZERIA</a>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ORDER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>          
+
+
+
+
+    
+
+    </nav>
+
+    </Navbar>
+    
     <div class="about-content">
       <p><em>"You cannot please everyone, You are not pizza."</em>
         <br>Those are wise words that we take at heart here at <strong>Pizzeria</strong><br>
         everyday as we make finely crafted Pizzas to suit everyone's taste.
       </p>
+      <br>
+      
+      <p><strong>HUNGRY?</strong></p>
+
     </div>
+      <br>
+      <br>
+      <br>
+    <button type="button" class="btn btn-success">ORDER NOW!</button>
+    <br>
+    <form>
+      <div class="form-group">
+        <label for="deliveryAddress">Delivery address</label>
+        <input type="text" class="form-control" id="delivery" aria-describedby="emailHelp">
+        <small id="deliveryHelp" class="form-text">Please enter a valid location name.</small>
+      </div>
+    </form>  
   </div>
 </body>
 </html>
