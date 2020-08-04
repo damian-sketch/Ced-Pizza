@@ -1,4 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
+body{
+  background-image: linear-gradient(brown, black);
+ 
+}
+
+h1{
+  font-family: "Josefin Sans";
+  color: white;
+}
+
+.orders{
+  text-align: center;
+  
+}
+
+.side-image{
+  float:left;
+  
+}
+
+
+.side-image img{
+  height: 470px;
+  margin-left: 40px;
+}
+
+.side-text{
+  float: left;
+  margin-left: 40px;
+  width: 500px;
+  color: white;
+}
 
 .navbar-nav{
   margin-left: 70%;
@@ -14,9 +48,26 @@
 .footer{
   position: absolute;
   left: 0;
-  bottom: -130px;
+  bottom: -680px;
   width: 100%;
   background-color: rgb(94, 6, 6);
   color: white;
   text-align: center;
+}
+
+.menu{
+  margin-top: 500px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 30px;
+  
+}
+
+.food{
+  margin-left: 20px;
+}
+
+.food p{
+  color: white;
+  margin-left: 10px;
 }
