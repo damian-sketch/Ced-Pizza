@@ -11,7 +11,7 @@
   />
   <link rel="stylesheet" href="css/order.css">
   
-  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   
   </head>
 
@@ -113,17 +113,17 @@
             <h2>Size</h2>
             <form action="#" class="customRadio customCheckbox m-0 p-0">
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="small" name="materialExampleRadios">
-                <label class="form-check-label" for="materialUnchecked">Small <span id="priceSmall">700</span></label>
+                <input type="radio" class="form-check-input" id="small" name="size" value="700">
+                <label class="form-check-label" for="materialUnchecked">Small <span id="priceSmall" >700</span></label>
               </div>
 
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="medium" name="materialExampleRadios">
-                <label class="form-check-label" for="materialUnchecked">Medium <span id="priceMedium">700</span></label>
+                <input type="radio" class="form-check-input" id="medium" name="size" value="700">
+                <label class="form-check-label" for="materialUnchecked">Medium <span id="priceMedium" >700</span></label>
               </div>
 
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="large" name="materialExampleRadios">
+                <input type="radio" class="form-check-input" id="large" name="size" value="700">
                 <label class="form-check-label" for="materialUnchecked">Large <span id="priceLarge">700</span></label>
               </div>
 
@@ -134,18 +134,18 @@
             <h2>Crust</h2>
             <form action="#" class="customRadio customCheckbox m-0 p-0">
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="small" name="materialExampleRadios">
-                <label class="form-check-label" for="materialUnchecked">Gluten-Free <span id="priceGluten">300</span></label>
+                <input type="radio" class="form-check-input" id="small" name="crusts" value="300">
+                <label class="form-check-label" for="materialUnchecked">Gluten-Free <span id="priceGluten" >300</span></label>
               </div>
 
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="medium" name="materialExampleRadios">
-                <label class="form-check-label" for="materialUnchecked">Crispy <span id="priceCrispy">400</span></label>
+                <input type="radio" class="form-check-input" id="medium" name="crusts" value="400">
+                <label class="form-check-label" for="materialUnchecked">Crispy <span id="priceCrispy" >400</span></label>
               </div>
 
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="large" name="materialExampleRadios">
-                <label class="form-check-label" for="materialUnchecked">Cheesy <span id="priceCheesy">500</span></label>
+                <input type="radio" class="form-check-input" id="large" name="crusts" value="500">
+                <label class="form-check-label" for="materialUnchecked">Cheesy <span id="priceCheesy" >500</span></label>
               </div>
 
             </form> 
@@ -155,18 +155,18 @@
             <h2>Toppings</h2>
             <form action="#" class="customRadio customCheckbox m-0 p-0">
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="small" name="materialExampleRadios">
-                <label class="form-check-label" for="materialUnchecked">Green Peppers <span id="pricePeppers">300</span></label>
+                <input type="radio" class="form-check-input" id="small" name="toppings" value="300">
+                <label class="form-check-label" for="materialUnchecked">Green Peppers <span id="pricePeppers" >300</span></label>
               </div>
 
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="medium" name="materialExampleRadios">
-                <label class="form-check-label" for="materialUnchecked">Pepperoni <span id="pricePepperoni">300</span></label>
+                <input type="radio" class="form-check-input" id="medium" name="toppings" value="300">
+                <label class="form-check-label" for="materialUnchecked">Pepperoni <span id="pricePepperoni" >300</span></label>
               </div>
 
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="large" name="materialExampleRadios">
-                <label class="form-check-label" for="materialUnchecked">Pineapple <span id="pricePineapple">200</span></label>
+                <input type="radio" class="form-check-input" id="large" name="toppings" value="200">
+                <label class="form-check-label" for="materialUnchecked">Pineapple <span id="pricePineapple" >200</span></label>
               </div>
              
             </form> 
@@ -175,14 +175,14 @@
             <div>
               
               <strong>Quantity</strong>
-              <input type="number" value="1">
+              <input type="number" name="quantity" value="1">
               
             </div> 
             
             
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Order</button>
+              <button type="button" id="orderBtn" class="btn btn-primary">Order</button>
             </div>
           </div>
 
