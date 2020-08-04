@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  var size = parseInt($("input[name='size']:checked").val());
-  var toppings = parseInt($("input[name='toppings']:checked").val());
-  var crusts = parseInt($("input[name='crusts']:checked").val());
+  var size = $("input[name=size]:checked").val();
+  var toppings = $("input[name=toppings]:checked").val();
+  var crusts = $("input[name=crusts]:checked").val();
 
-  var price = size + toppings + crusts;
+  var price = parseInt(size + toppings + crusts);
 
   $("#orderBtn").click(function(){
     alert("Your order costs " + price);
