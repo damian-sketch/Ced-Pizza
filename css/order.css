@@ -71,3 +71,15 @@ h1{
   color: white;
   margin-left: 10px;
 }
+
+#priceSmall{
+  margin-left: 350px;
+}
+
+#priceMedium{
+  margin-left: 330px;
+}
+
+#priceLarge{
+  margin-left: 350px;
+}

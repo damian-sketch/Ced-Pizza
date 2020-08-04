@@ -104,12 +104,27 @@
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
+             
+              <h4 class="modal-title">Customise Order</h4>
             </div>
-            <div class="modal-body">
-              <p>Some text in the modal.</p>
-            </div>
+            <h2>Size</h2>
+            <form action="#" class="customRadio customCheckbox m-0 p-0">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="small" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Small <span id="priceSmall">700</span></label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="medium" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Medium <span id="priceMedium">700</span></label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="large" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Large <span id="priceLarge">700</span></label>
+              </div>
+
+            </form>  
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
