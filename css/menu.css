@@ -2,3 +2,24 @@ body{
   background-image: linear-gradient(rgb(100, 20, 20), black);
 }
 
+
+.navbar-nav{
+  margin-left: 70%;
+}
+
+.navbar-brand{
+  font-family: "Lobster";
+  font-size: 1.6em;
+  
+}
+
+
+.footer{
+  position: absolute;
+  left: 0;
+  bottom: -130px;
+  width: 100%;
+  background-color: rgb(94, 6, 6);
+  color: white;
+  text-align: center;
+}
