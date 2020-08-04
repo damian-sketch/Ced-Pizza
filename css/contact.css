@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+
+.form-group{
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  
+}
+
+.navbar-nav{
+  margin-left: 70%;
+}
+
+.navbar-brand{
+  font-family: "Lobster";
+  font-size: 1.6em;
+  
+}
+
+input{
+  margin:30px;
+}
+
+body{
+  background-image: linear-gradient(brown, black);
+}
+
+.footer{
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+  background-color: rgb(94, 6, 6);
+  color: white;
+  text-align: center;
+}
