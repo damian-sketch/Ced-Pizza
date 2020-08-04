@@ -16,3 +16,7 @@ function About() {
 
 const domContainer = document.querySelector(".about");
 ReactDOM.render(e(About), domContainer);*/
+
+function orderPage(){
+  location.href = "order.html"
+};
