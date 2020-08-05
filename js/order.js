@@ -1,12 +1,10 @@
-$(document).ready(function(){
-  var size = $("input[name=size]:checked").val();
-  var toppings = $("input[name=toppings]:checked").val();
-  var crusts = $("input[name=crusts]:checked").val();
+function totalPrice(){
+  var size = parseInt(document.getElementById("size").value);
+  var crusts = parseInt(document.getElementById("crusts").value);
+  var toppings = parseInt(document.getElementById("toppings").value);
+  var price = 0;
 
-  var price = parseInt(size + toppings + crusts);
+  price = size + crusts + toppings;
 
-  $("#orderBtn").click(function(){
-    alert("Your order costs " + price);
-  });
-
-});
+  alert("Your order costs " + price);
+};
